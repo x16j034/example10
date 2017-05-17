@@ -16,5 +16,25 @@ namespace Example10
         {
             InitializeComponent();
         }
+
+        private void btnJudge_Click(object sender, EventArgs e)
+        {
+            int age = int.Parse(tbxAge.Text);
+            if (age == 60)
+                lblResult.Text = "還暦です";
+            else if (age >= 20)
+                lblResult.Text = "成人です";
+            else
+                lblResult.Text = "未成年です";
+        }
+        private void tbxAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
